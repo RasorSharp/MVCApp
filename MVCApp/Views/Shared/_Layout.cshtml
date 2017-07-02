@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Content/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
+        body {
+            background-color: rgb(196, 229, 246)
+        }
+        
+        .myNavBar{
+            background-color: rgba(25, 20, 20, 0.84);
+        }
+
+            .myNavBar span {
+                margin-left: 10px;
+                margin-top: 3px;
+                margin-bottom: 3px;
+                font-size: 20pt;
+                color: white;
+            }
+            
+            .myNavBar span:hover {
+                color: lightgray;
+            }
+
+
+    </style>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12 myNavBar">
+            <a href="@Url.Action("Index", "Home")"><span class="glyphicon glyphicon-home"></span></a>
+            <a href="#"><span>About</span></a>
+            @*<a href="@Html.Action("Index", "Home")"><span class="glyphicon glyphicon-home"></span></a>*@
+            @*@Html.ActionLink("Back to Main", "Index", "Home")*@
+        </div>
+    </div>
+    <div style="margin-right:40px; margin-left: 40px;">
+        @RenderBody()
+    </div>
+</body>
+</html>
