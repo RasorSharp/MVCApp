@@ -13,7 +13,7 @@ namespace MVCApp
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            RegisterGlobalFilters(GlobalFilters.Filters);
+            //RegisterGlobalFilters(GlobalFilters.Filters);
         }
 
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
